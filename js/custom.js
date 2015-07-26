@@ -15,3 +15,11 @@ $(function() {
         $(".navbar-collapse").collapse('hide');
     });
 })
+
+document.getElementById("developer").onclick = function () {
+    location.href = "developer.html";
+};
+
+document.getElementById("homepage").onclick = function () {
+    location.href = "index.html";
+};
