@@ -1,16 +1,105 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 
+        Boxer Template
+        http://www.templatemo.com/preview/templatemo_446_boxer
+        -->
+        <meta charset="utf-8">
+        <title>CloudTrail Viewer :: Service Overview</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- google font -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="developer"></div>
+
+        <!-- start navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+                    <a id="homepage" href="index.html" class="navbar-brand">CloudTrail Viewer</a>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+
+        <!-- start home -->
+        <section id="home">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <h1 class="text-upper">Service Overview</h1>
+                            <p class="tm-white">What AWS services are the most active.</p>                            
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end home -->
+        
+		<section>
+			<div class="container">
+				<div class="row">
+                    <div class="col-md-1"></div>
+					<div class="col-md-10">
+                        
+                        <p style="text-align: left">
+                            The Service Overview screen is normally the first screen to load as Events are being loaded.
+                        </p>
+                        <p>
+                            As events are loaded into CloudTrail Viewer a new Service component will be added to the screen.
+                            This component shows on the left the number of API calls made by AWS in monitoring your resources, and the
+                            number of API calls made by your IAM Users / Roles on the right. The total number of API calls made to the service
+                            is shown at the bottom.
+                        </p>
+                        
+                        <p>
+                            Clicking one of the Services will show a Table View to appear at the bottom of the screen containing just the events
+                            belonging to that service. All the functionality provided by the Table View feature is available.
+                        </p>
+                                                
+					</div>
+                    <div class="col-md-1"></div>
+				</div>
+			</div>
+		</section>
+
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <p>Copyright © 2015 Mark P. Haskins</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+        <script src="js/custom.js"></script>
     </body>
 </html>
