@@ -59,33 +59,44 @@
             </div>
         </section>
         <!-- end home -->
-        
-		<section>
-			<div class="container">
-				<div class="row">
+
+        <section>
+            <div class="container">
+                <div class="row">
                     <div class="col-md-1"></div>
-					<div class="col-md-10">
-                        
+                    <div class="col-md-10">
+                        <br/><br/>
                         <p style="text-align: left">
-                            The Service Overview screen is normally the first screen to load as Events are being loaded.
+                            The Service Overview screen is normally the first screen to load as Events are being loaded. As events are loaded into CloudTrail Viewer a new Service detail panel will be added to the screen.
                         </p>
+                        <br/>
+                        <div align="center"><img src="images/ServiceOverviewDetail.png" alt="Service Detail"></div>
+                        <br/>
                         <p>
-                            As events are loaded into CloudTrail Viewer a new Service component will be added to the screen.
-                            This component shows on the left the number of API calls made by AWS in monitoring your resources, and the
-                            number of API calls made by your IAM Users / Roles on the right. The total number of API calls made to the service
-                            is shown at the bottom.
+                            Each Service detail panel consists of the following items:
                         </p>
-                        
+                        <ul>
+                            <li>The service name at the top of the box</li>
+                            <li>The total number of API Calls that were loaded at the bottom of the box</li>
+                            <li>The main section of the box breaks down the API Calls into two areas</li>
+                            <ul>
+                                <li>On the left (the blue colour) are the total number of API calls made by AWS on your behalf while monitoring your resources</li>
+                                <li>On the right (the greeny colour) are the total number of API calls made your IAM User/Group/Roles </li>
+                                <li>Under each section are the Peak Events per Second/Minute/Hour</li>
+                            </ul>
+                        </ul>
+
+                        <br/>
                         <p>
-                            Clicking one of the Services will show a Table View to appear at the bottom of the screen containing just the events
-                            belonging to that service. All the functionality provided by the Table View feature is available.
+                            Clicking one of the Total number will cause a Table View to appear at the bottom of the screen (if it's not already visible)
+                            containing just the events belonging to that particular count. All the functionality provided by the Table View feature is available.
                         </p>
-                                                
-					</div>
+
+                    </div>
                     <div class="col-md-1"></div>
-				</div>
-			</div>
-		</section>
+                </div>
+            </div>
+        </section>
 
         <!-- start footer -->
         <footer>

@@ -26,12 +26,11 @@
 
 	</head>
 	<body>        
-		<!-- start preloader -->
+
 		<div class="preloader">
 			<div class="sk-spinner sk-spinner-rotating-plane"></div>
     	 </div>
-		<!-- end preloader -->
-		<!-- start navigation -->
+
 		<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -52,8 +51,7 @@
 				</div>
 			</div>
 		</nav>
-		<!-- end navigation -->
-		<!-- start home -->
+
 		<section id="home">
 			<div class="overlay">
 				<div class="container">
@@ -69,9 +67,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- end home -->
-		
-		<!-- start divider -->
+
 		<section id="divider">
 			<div class="container">
 				<div class="row">
@@ -88,9 +84,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- end divider -->
 
-		<!-- start feature -->
 		<section id="feature">
 			<div class="container">
 				<div class="row">
@@ -107,9 +101,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- end feature -->
 
-		<!-- start feature1 -->
 		<section id="feature1">
 			<div class="container">
 				<div class="row">
@@ -125,49 +117,113 @@
 				</div>
 			</div>
 		</section>
-		<!-- end feature1 -->
-        
-		<!-- start feature2 -->
+
 		<section id="feature">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
-						<h2 class="text-uppercase">User Overview</h2>
+						<h3 class="text-uppercase">User Activity</h3>
 						<p>The User Overview feature breaks the loaded Events down into actions performed by IAM Users.</p>
                         <p>Clicking any of the Users exposes a Table view where all the features described above are available.</p>
                         <p>Find out more about <a href="useroverview.html">User Overview</a></p>
 					</div>
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h3 class="text-uppercase">Resources Events</h3>
+						<p>
+                            The Resources Feature allows you to see what Resources have been created or destroyed with the loaded events,
+                            these might be new EC2 instances or RDS instances or EC2 being stopped or restarted.
+                        </p>
+                        <p>
+                            Some API calls have already been provided to get you started, you can customise this feature to only show
+                            the events you are interested in.
+                        </p>
+					</div>
 				</div>
 			</div>
 		</section>
-		<!-- end feature -->
-        
 
-		<!-- start divider -->
-		<section id="divider">
+		<section id="feature3">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-						<i class="fa fa-download"></i>
-						<h3 class="text-uppercase">DOWNLOAD</h3>
-						<p>Binaries can be downloaded from the CloudTrail Viewer GitHub <a href="https://github.com/githublemming/CloudTrailViewer/releases/latest" target="_blank">release</a> page</p>
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h3 class="text-uppercase">Security Events</h3>
+                        <p>
+                            The Security Feature show what API calls have been made in the loaded events that could be considered
+                            a security risk, these might be events such as a Security Group being opened or a new Policy Document
+                            applied to an IAM object.
+                        </p>
+                        <p>
+                            Some API calls have already been provided to get you started, you can customise this feature to only show
+                            the events you are interested in.
+                        </p>
 					</div>
-					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-						<i class="fa fa-copy"></i>
-						<h3 class="text-uppercase">CLONE</h3>
-						<p>CloudTrail Viewer is Open Source and you can freely download the source from <a href="https://github.com/githublemming/CloudTrailViewer" target="_blank">GitHub</a>.</p>
-					</div>
-					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-						<i class="fa fa-code-fork"></i>
-						<h3 class="text-uppercase">FORK</h3>
-						<p>If you would like to contribute to the project please feel free.</p>
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h3 class="text-uppercase">Error Events</h3>
+						<p>
+                            The Error Feature shows all the API calls that have generated an Error when they were call grouped together by
+                            Error Code.
+                        </p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- end divider -->
         
-		<!-- start footer -->
+		<section id="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h3 class="text-uppercase">Help</h3>
+                        <p>
+                            Each feature provides it's own context aware help, by clicking the ? at the top right of the screen a help window
+                            will appear explaining what the current feature does.
+                        </p>
+					</div>
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h3 class="text-uppercase">Configuration</h3>
+						<p>
+                            Using the Preferences menu option there are a couple of configuration options you can make
+                        </p>
+                        <ul>
+                            <li>Define AWS accounts providing an IAM key and secret to be able to access a S3 bucket</li>
+                            <li>Provide an Alias for your AWS Account ID, useful if you log multiple account into the same S3 bucket</li>
+                            <li>Configure what API calls should be displayed on the Security screen</li>
+                            <li>Configure what API calls should be displayed on the Resources screen</li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <section id="divider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-clone"></i>
+                        <h3 class="text-uppercase">CLONE</h3>
+                        <p>
+                            CloudTrail Viewer is Open Source and you can freely clone, fork or grab the source from its <a href="https://github.com/githublemming/CloudTrailViewer" target="_blank">GitHub</a> repository.
+                            If you want the latest bleeding edge functionality this is where to go, though there is always a chance that it might not be stable.
+                        </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-battery-half"></i>
+                        <h3 class="text-uppercase">Latest</h3>
+                        <p>If you want the latest features ahead of official releases but would prefer something a bit more stable then you can download a <em>Work In Progress</em> binary using the links above.</p>
+                        <div class="list-group" style="text-align: left !important;">
+                            <a class="list-group-item" href="https://www.dropbox.com/s/1hryc1cjmf6kvwy/CloudTrailViewer.dmg?dl=1"><i class="fa fa-apple fa-fw" style="font-size: 20px !important;"></i>&nbsp; OS X</a>
+                            <a class="list-group-item" href="https://www.dropbox.com/s/3xnyjyoncrljxo0/CloudTrailViewer.exe?dl=1"><i class="fa fa-windows fa-fw" style="font-size: 20px !important;"></i>&nbsp; Windows</a>
+                            <a class="list-group-item" href="https://www.dropbox.com/s/t0m698ly3w4daxl/CloudTrailViewer.jar?dl=1"><i class="fa fa-linux fa-fw" style="font-size: 20px !important;"></i>&nbsp; Runnable Jar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-download"></i>
+                        <h3 class="text-uppercase">Release</h3>
+                        <p>If you need stability in your life then the Official releases can be downloaded from the GitHub <a href="https://github.com/githublemming/CloudTrailViewer/releases/latest" target="_blank">release</a> pages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 		<footer>
 			<div class="container">
 				<div class="row">
